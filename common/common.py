@@ -44,3 +44,12 @@ class AoCParser:
             if len(paragraph) > 0:
                 ret.append(paragraph)
         return ret
+
+    def parse_as_comma_separated_line_of_ints(self):
+        return self.parse_as_delimited_line_of_ints(",")
+
+    def parse_as_delimited_line_of_ints(self, delimiter):
+        with open(self.abs_input_filepath, 'r') as inputfp:
+            line = inputfp.readline()
+
+        return [int(digit) for digit in line.split(delimiter)]
