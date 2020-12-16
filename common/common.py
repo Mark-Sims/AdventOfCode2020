@@ -1,3 +1,6 @@
+from functools import reduce
+import operator
+
 class AoCParser:
     def __init__(self, abs_input_filepath):
         self.abs_input_filepath = abs_input_filepath
@@ -53,3 +56,10 @@ class AoCParser:
             line = inputfp.readline()
 
         return [int(digit) for digit in line.split(delimiter)]
+
+#STARTREGION Helpers
+
+def prod(factors):
+    return reduce(operator.mul, factors, 1)
+
+#ENDREGION Helpers
