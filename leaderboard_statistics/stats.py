@@ -3,6 +3,7 @@ import json
 
 script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
 abs_input_filepath = os.path.join(script_dir, '190418.json')
+abs_input_filepath = os.path.join(script_dir, '2020.12.22_16.13.15_190418.json')
 
 with open(abs_input_filepath, 'r', encoding='utf-8') as fh:
     data = json.load(fh)
@@ -50,4 +51,9 @@ def get_stats_for_user(user, day=None):
     print("Total score for {}: {} points!".format(user, total))
 
 get_stats_for_user('Mark-Sims', 17)
+get_stats_for_user('Mark-Sims', 18)
+get_stats_for_user('Mark-Sims', 19)
+get_stats_for_user('Mark-Sims', 20)
+get_stats_for_user('Mark-Sims', 21)
+get_stats_for_user('Mark-Sims', 22)
     
