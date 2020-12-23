@@ -57,6 +57,12 @@ class AoCParser:
 
         return [int(digit) for digit in line.split(delimiter)]
 
+    def parse_as_single_line_of_undelimited_ints(self):
+        with open(self.abs_input_filepath, 'r') as inputfp:
+            line = inputfp.readline()
+
+        return [int(digit) for digit in line]
+
 #STARTREGION Helpers
 
 def prod(factors):
