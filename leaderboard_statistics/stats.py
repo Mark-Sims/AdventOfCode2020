@@ -4,6 +4,8 @@ import json
 script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
 abs_input_filepath = os.path.join(script_dir, '190418.json')
 abs_input_filepath = os.path.join(script_dir, '2020.12.22_16.13.15_190418.json')
+abs_input_filepath = os.path.join(script_dir, '2020.12.24_06.17.49_190418.json')
+abs_input_filepath = os.path.join(script_dir, '2020.12.27_22.13.19_190418.json')
 
 with open(abs_input_filepath, 'r', encoding='utf-8') as fh:
     data = json.load(fh)
@@ -56,4 +58,7 @@ get_stats_for_user('Mark-Sims', 19)
 get_stats_for_user('Mark-Sims', 20)
 get_stats_for_user('Mark-Sims', 21)
 get_stats_for_user('Mark-Sims', 22)
+get_stats_for_user('Mark-Sims', 23)
+get_stats_for_user('Mark-Sims', 24)
+get_stats_for_user('Mark-Sims', 25)
     
